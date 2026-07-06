@@ -136,13 +136,6 @@ export default function Development() {
             className="w-full h-full object-cover"
             style={{ objectPosition: '95% 15%', filter: 'brightness(1.05) contrast(1.0) saturate(0.95)' }}
           />
-          <div
-            className="absolute inset-0"
-            style={{
-              background:
-                'linear-gradient(90deg, rgba(17,17,17,0.97) 0%, rgba(17,17,17,0.9) 28%, rgba(17,17,17,0.55) 48%, rgba(17,17,17,0.22) 64%, rgba(17,17,17,0.12) 100%)',
-            }}
-          />
         </div>
 
         <div className="relative z-10 px-6 md:px-16 lg:px-[80px] w-full">
