@@ -197,7 +197,7 @@ export default function Home() {
             src="/images/hero.png"
             alt=""
             className="w-full h-full object-cover"
-            style={{ objectPosition: 'right center', filter: 'brightness(1.05) contrast(1.0) saturate(0.95)' }}
+            style={{ objectPosition: '70% centre', filter: 'brightness(1.05) contrast(1.0) saturate(0.95)' }}
           />
           {/* Left-to-right gradient — dark where text sits, clear by the subject. No bottom wash; it would crush the lit face/ball. */}
           <div
@@ -501,6 +501,7 @@ export default function Home() {
       </Section>
 
       {/* SECTION 10 — FOOTER */}
+      </main>
       <footer className="w-full px-6 md:px-16 lg:px-[80px] py-20" style={{ backgroundColor: C.black, borderTop: '1px solid rgba(255,255,255,0.08)' }}>
         <div className="max-w-[1100px] mx-auto flex flex-col md:flex-row justify-between gap-10">
           <div>
@@ -515,18 +516,20 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-col gap-3">
-            {['Assessment', 'Development', 'Pathways', 'Resources'].map((l) => (
+            {['Assessment', 'Development', 'Resources'].map((l) => (
               <Link key={l} href="#" className="text-[14px]" style={{ ...sans, color: C.grey }}>
                 {l}
               </Link>
             ))}
           </div>
         </div>
-        <p className="text-[12px] mt-16 text-center" style={{ ...sans, color: '#555' }}>
+        <p
+          className="text-[12px] mt-16 text-center"
+          style={{ ...sans, color: '#555' }}
+        >
           © Playmaker London. All rights reserved.
         </p>
       </footer>
-    </main>
-    </>
+      </>
   );
 }
