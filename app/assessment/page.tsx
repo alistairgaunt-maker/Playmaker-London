@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import NavBar from '../../components/NavBar';
 
 /* ── Design tokens (Doc 80 — mirrored from homepage) ── */
 const C = {
@@ -144,6 +145,7 @@ export default function Assessment() {
 
   return (
     <main style={{ backgroundColor: C.black }}>
+      <NavBar />
 
       {/* ── HERO ── */}
       <section
@@ -551,24 +553,30 @@ export default function Assessment() {
             </p>
           </div>
           <div className="flex flex-col gap-3">
-            {['Assessment', 'Development', 'Resources'].map((l) => (
-              <Link
-                key={l}
-                href={`/${l.toLowerCase()}`}
-                className="text-[14px]"
-                style={{ ...sans, color: C.grey, textDecoration: 'none' }}
-              >
-                {l}
-              </Link>
-            ))}
+  {[
+    { label: 'Home', href: '/' },
+    { label: 'Assessment', href: '/assessment' },
+    { label: 'Development', href: '/development' },
+    { label: 'Resources', href: '/resources' },
+    { label: 'Privacy', href: '/privacy' },
+  ].map((item) => (
+    <Link
+      key={item.href}
+      href={item.href}
+      className="text-[14px]"
+      style={{ ...sans, color: C.grey, textDecoration: 'none' }}
+    >
+      {item.label}
+    </Link>
+  ))}
+</div>
           </div>
-        </div>
-        <p
+          <p
           className="text-[12px] mt-16 text-center"
           style={{ ...sans, color: '#555' }}
         >
           © Playmaker London. All rights reserved.
-        </p>
+          </p>
       </footer>
     </main>
   );

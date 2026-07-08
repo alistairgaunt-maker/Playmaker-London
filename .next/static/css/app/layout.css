@@ -455,8 +455,17 @@ video {
 .inset-0{
   inset: 0px;
 }
+.left-0{
+  left: 0px;
+}
+.top-0{
+  top: 0px;
+}
 .z-10{
   z-index: 10;
+}
+.z-50{
+  z-index: 50;
 }
 .mx-auto{
   margin-left: auto;
@@ -500,6 +509,9 @@ video {
 }
 .mt-1{
   margin-top: 0.25rem;
+}
+.mt-10{
+  margin-top: 2.5rem;
 }
 .mt-12{
   margin-top: 3rem;
@@ -582,6 +594,9 @@ video {
 .max-w-\[780px\]{
   max-width: 780px;
 }
+.max-w-\[800px\]{
+  max-width: 800px;
+}
 .shrink-0{
   flex-shrink: 0;
 }
@@ -640,6 +655,11 @@ video {
 .gap-y-16{
   row-gap: 4rem;
 }
+.space-y-8 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+}
 .overflow-hidden{
   overflow: hidden;
 }
@@ -696,8 +716,27 @@ video {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
 }
+.py-6{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
 .pt-7{
   padding-top: 1.75rem;
+}
+.pt-8{
+  padding-top: 2rem;
+}
+.pb-20{
+  padding-bottom: 5rem;
+}
+.pt-40{
+  padding-top: 10rem;
+}
+.pt-4{
+  padding-top: 1rem;
+}
+.pt-48{
+  padding-top: 12rem;
 }
 .text-left{
   text-align: left;
@@ -797,6 +836,9 @@ video {
 }
 .leading-\[1\.7\]{
   line-height: 1.7;
+}
+.leading-\[1\.8\]{
+  line-height: 1.8;
 }
 .leading-none{
   line-height: 1;

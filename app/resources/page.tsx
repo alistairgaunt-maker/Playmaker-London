@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import NavBar from '../../components/NavBar';
 
 /* ---------- Design tokens (Doc 80 — mirrored from homepage) ---------- */
 const C = {
@@ -94,7 +95,7 @@ export default function Resources() {
 
   return (
     <main style={{ backgroundColor: C.black }}>
-
+      <NavBar />
       {/* ── HERO ── */}
       <section
         className="relative w-full min-h-screen flex items-center overflow-hidden"
@@ -301,16 +302,22 @@ export default function Resources() {
             </p>
           </div>
           <div className="flex flex-col gap-3">
-            {['Assessment', 'Development', 'Resources'].map((l) => (
-              <Link
-                key={l}
-                href={`/${l.toLowerCase()}`}
-                className="text-[14px]"
-                style={{ ...sans, color: C.grey, textDecoration: 'none' }}
-              >
-                {l}
-              </Link>
-            ))}
+            {[
+  { label: 'Home', href: '/' },
+  { label: 'Assessment', href: '/assessment' },
+  { label: 'Development', href: '/development' },
+  { label: 'Resources', href: '/resources' },
+  { label: 'Privacy', href: '/privacy' },
+].map((item) => (
+  <Link
+    key={item.href}
+    href={item.href}
+    className="text-[14px]"
+    style={{ ...sans, color: C.grey }}
+  >
+    {item.label}
+  </Link>
+))}
           </div>
         </div>
         <p

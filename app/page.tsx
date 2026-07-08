@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import NavBar from '../components/NavBar';
 import { useState, useEffect, useRef } from 'react';
 
 /* ---------- Design tokens (Doc 80 — web-scaled) ---------- */
@@ -189,6 +190,7 @@ export default function Home() {
         />
       </div>
       <main style={{ backgroundColor: C.black }}>
+        <NavBar />
       {/* SECTION 1 — HERO (image: subject right-weighted, text sits in the left negative space) */}
       <section className="relative w-full min-h-screen flex items-center overflow-hidden" style={{ backgroundColor: C.black }}>
         {/* Background image layer */}
@@ -516,11 +518,17 @@ export default function Home() {
             </p>
           </div>
           <div className="flex flex-col gap-3">
-            {['Assessment', 'Development', 'Resources'].map((l) => (
-              <Link key={l} href="#" className="text-[14px]" style={{ ...sans, color: C.grey }}>
-                {l}
-              </Link>
-            ))}
+            {[
+  { label: 'Home', href: '/' },
+  { label: 'Assessment', href: '/assessment' },
+  { label: 'Development', href: '/development' },
+  { label: 'Resources', href: '/resources' },
+  { label: 'Privacy', href: '/privacy' },
+].map((item) => (
+  <Link key={item.href} href={item.href} className="text-[14px]" style={{ ...sans, color: C.grey }}>
+    {item.label}
+  </Link>
+))}
           </div>
         </div>
         <p
