@@ -720,23 +720,17 @@ video {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
+.pb-20{
+  padding-bottom: 5rem;
+}
+.pt-48{
+  padding-top: 12rem;
+}
 .pt-7{
   padding-top: 1.75rem;
 }
 .pt-8{
   padding-top: 2rem;
-}
-.pb-20{
-  padding-bottom: 5rem;
-}
-.pt-40{
-  padding-top: 10rem;
-}
-.pt-4{
-  padding-top: 1rem;
-}
-.pt-48{
-  padding-top: 12rem;
 }
 .text-left{
   text-align: left;

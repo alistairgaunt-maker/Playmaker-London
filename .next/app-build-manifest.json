@@ -11,20 +11,20 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/resources/page": [
+    "/assessment/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/resources/page.js"
+      "static/chunks/app/assessment/page.js"
     ],
     "/development/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/development/page.js"
     ],
-    "/assessment/page": [
+    "/resources/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/assessment/page.js"
+      "static/chunks/app/resources/page.js"
     ],
     "/privacy/page": [
       "static/chunks/webpack.js",

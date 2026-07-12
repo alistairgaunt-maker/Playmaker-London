@@ -116,9 +116,9 @@ export default function Home() {
       body: 'Every recommendation is grounded in player development, maturation, psychology and performance. Not opinion. Not instinct.',
     },
     {
-      title: 'Decision intelligence',
-      body: 'Development is shaped by decisions about environment, opportunity, timing and investment. We help families make better ones.',
-    },
+  title: 'Expert guidance on what matters',
+  body: 'Development is shaped by decisions about environment, opportunity, timing and investment. We help families make better ones.',
+},
   ];
 
   const assessmentCovers = [
@@ -223,8 +223,8 @@ export default function Home() {
                 className="text-[36px] md:text-[52px] lg:text-[60px] leading-[1.12] font-bold mb-8"
                 style={{ ...serif, color: C.white }}
               >
-                Serious development starts with honest assessment.
-                <span style={{ color: C.grey }} className="font-normal italic"> Not assumptions.</span>
+                He was told he wasn't quite good enough.
+<span style={{ color: C.grey }} className="font-normal italic"> Here's what nobody told him next.</span>
               </h1>
             </Reveal>
             <Reveal delay={0.2}>
@@ -232,7 +232,7 @@ export default function Home() {
                 className="text-[16px] md:text-[18px] leading-[1.6] max-w-[480px] mb-12"
                 style={{ ...sans, color: C.grey }}
               >
-                We start every player relationship with a structured individual assessment, because the right development plan requires an honest picture first.
+                Being overlooked is not a verdict. It is where every serious player's story begins.
               </p>
             </Reveal>
             <Reveal delay={0.3}>

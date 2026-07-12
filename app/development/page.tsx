@@ -94,7 +94,7 @@ export default function Development() {
     {
       name: 'Performance',
       forWho: 'For players with a defined pathway who need to close specific gaps.',
-      body: 'A more intensive programme with closer monitoring of load, technical detail and physical development, built for players actively pursuing representative or academy opportunities.',
+      body: 'A more intensive programme with closer oversight of load, technical detail and physical development, built for players actively pursuing representative or academy opportunities.',
     },
     {
       name: 'Elite',
