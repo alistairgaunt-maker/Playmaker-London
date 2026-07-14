@@ -252,6 +252,14 @@ export default function Home() {
                   Download a Free Guide
                 </Link>
               </div>
+              <Reveal delay={0.4}>
+              <p
+                className="text-[13px] mt-6"
+                style={{ ...sans, color: C.grey, letterSpacing: '0.02em' }}
+              >
+                Interpreted by a certified PFSA scout.
+              </p>
+            </Reveal>
             </Reveal>
           </div>
         </div>

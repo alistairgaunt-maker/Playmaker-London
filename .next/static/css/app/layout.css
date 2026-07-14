@@ -783,6 +783,9 @@ video {
 .text-\[52px\]{
   font-size: 52px;
 }
+.text-\[1px\]{
+  font-size: 1px;
+}
 .font-bold{
   font-weight: 700;
 }
