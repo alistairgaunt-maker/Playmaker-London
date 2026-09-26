@@ -514,7 +514,7 @@ export default function Assessment() {
             </Reveal>
             <Reveal delay={0.2}>
               <Link
-                href="mailto:hello@playmakerlondon.com"
+                href="mailto:hello@playmakerlondon.co.uk"
                 className="inline-block px-12 py-5 text-[14px] font-bold uppercase rounded-sm transition-opacity hover:opacity-90"
                 style={{ ...sans, backgroundColor: C.blue, color: C.white, letterSpacing: '0.08em' }}
               >
