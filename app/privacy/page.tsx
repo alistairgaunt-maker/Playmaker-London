@@ -96,10 +96,54 @@ export default function Privacy() {
           <Reveal delay={0.1}>
             <section>
               <h2 className="text-[18px] font-bold mb-3" style={{ color: C.white }}>
+                Health, Nutrition and Wellbeing Information
+              </h2>
+              <p>
+                As part of registration and ongoing coaching, we may ask for health-related information. This includes nutrition information and regular wellbeing check-ins covering things like sleep, fatigue, soreness, confidence and any pain or niggles.
+              </p>
+              <p className="mt-4">
+                We use this only to tailor a player's coaching, nutrition and recovery guidance. It is never used for anything else.
+              </p>
+              <p className="mt-4">
+                This information is only ever collected with your explicit, separate consent. If a player is under 18, that consent comes from a parent or legal guardian, not the player alone.
+              </p>
+              <p className="mt-4">
+                It is stored securely, alongside the rest of a player's development information, and we do not share it with anyone outside Playmaker London without asking you first, for that specific purpose.
+              </p>
+            </section>
+          </Reveal>
+
+          <Reveal delay={0.1}>
+            <section>
+              <h2 className="text-[18px] font-bold mb-3" style={{ color: C.white }}>
+                Video and Photo Footage
+              </h2>
+              <p>
+                During assessments and testing, and throughout a player's time with us, video and photo footage of the player may be captured. This includes the structured tests players film and upload themselves.
+              </p>
+              <p className="mt-4">
+                We use this footage only for performance evaluation and coach review. It is not used for anything else, and we do not share it with anyone outside Playmaker London without asking you first, for that specific purpose.
+              </p>
+              <p className="mt-4">
+                This footage is only ever captured with your explicit, separate consent. If a player is under 18, that consent comes from a parent or legal guardian.
+              </p>
+            </section>
+          </Reveal>
+
+          <Reveal delay={0.1}>
+            <section>
+              <h2 className="text-[18px] font-bold mb-3" style={{ color: C.white }}>
                 Keeping You Informed
               </h2>
               <p>
-                As Playmaker London grows, we may introduce email updates, such as development tips or programme news, for families who choose to receive them. Where this applies, it will always be a clear, separate opt-in, and you can unsubscribe at any time. This page will be updated to reflect exactly how that works once it is introduced.
+                Marketing updates, such as development tips or programme news, are always a separate, optional opt-in at registration. Choosing not to opt in never affects a player's registration or place on the programme.
+              </p>
+              <p className="mt-4">
+                You can withdraw this consent at any time by emailing{' '}
+                <a href="mailto:hello@playmakerlondon.co.uk" style={{ color: C.blueLight }}>
+                  hello@playmakerlondon.co.uk
+                </a>
+                .
               </p>
             </section>
           </Reveal>
@@ -177,8 +221,8 @@ export default function Privacy() {
               </h2>
               <p>
                 We are always happy to talk this through. Contact us at{' '}
-                <a href="mailto:contact@playmakerldn.co.uk" style={{ color: C.blueLight }}>
-                  contact@playmakerldn.co.uk
+                <a href="mailto:hello@playmakerlondon.co.uk" style={{ color: C.blueLight }}>
+                  hello@playmakerlondon.co.uk
                 </a>{' '}
                 or <span style={{ color: C.white }}>07944 670972</span>.
               </p>
